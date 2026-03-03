@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased transition-colors duration-300;
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12), transparent 45%),
+    radial-gradient(circle at 85% 5%, rgba(139, 92, 246, 0.10), transparent 40%);
+}
+
+.dark body {
+  @apply bg-slate-950 text-slate-100;
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.20), transparent 45%),
+    radial-gradient(circle at 85% 5%, rgba(139, 92, 246, 0.14), transparent 40%);
+}
+
+.section-container {
+  @apply mx-auto max-w-6xl px-5 sm:px-8;
+}
+
+.glass {
+  @apply border border-white/40 bg-white/70 backdrop-blur-xl dark:border-slate-700/60 dark:bg-slate-900/65;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-soft transition duration-300 dark:border-slate-700/70 dark:bg-slate-900/90;
+}
