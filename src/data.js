@@ -1,3 +1,5 @@
+const withBase = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const navLinks = [
   "Home",
   "About",
@@ -94,51 +96,51 @@ export const dashboards = [
   {
     title: "Drug-Level Cost Distribution Analysis",
     type: "image",
-    src: "/dashboard/Drug-Level Cost Distribution Analysis.png"
+    src: withBase("dashboard/Drug-Level Cost Distribution Analysis.png")
   },
   {
     title: "Manufacturer-Level Cost & Utilization Dashboard",
     type: "image",
-    src: "/dashboard/Manufacturer-Level Cost & Utilization Dashboard.png"
+    src: withBase("dashboard/Manufacturer-Level Cost & Utilization Dashboard.png")
   },
   {
     title: "Medicaid Drug Spending & Usage Dashboard",
     type: "image",
-    src: "/dashboard/Medicaid Drug Spending & Usage Dashboard.png"
+    src: withBase("dashboard/Medicaid Drug Spending & Usage Dashboard.png")
   },
   {
     title: "Organisational Spending Overview",
     type: "image",
-    src: "/dashboard/Organisational spending overview.png"
+    src: withBase("dashboard/Organisational spending overview.png")
   },
   {
     title: "Supplier Spend Performance Analytics",
     type: "image",
-    src: "/dashboard/Supplier spend performance analytics.png"
+    src: withBase("dashboard/Supplier spend performance analytics.png")
   },
   {
     title: "Streamlit Supplier Analysis Dashboard",
     type: "video",
-    src: "/dashboard/Streamlit Supplier Analysis Dashboard.webm"
+    src: withBase("dashboard/Streamlit Supplier Analysis Dashboard.webm")
   }
 ];
 
 export const certifications = [
   {
     title: "Python Foundation - Infosys Springboard (2025)",
-    file: "/certificates/Inforsys.pdf"
+    file: withBase("certificates/Inforsys.pdf")
   },
   {
     title: "Business Statistics - SWAYAM (University of Mysore) (2022)",
-    file: "/certificates/certificate bs NPTEL.pdf"
+    file: withBase("certificates/certificate bs NPTEL.pdf")
   },
   {
     title: "R Basics Certificate",
-    file: "/certificates/intro_R.pdf"
+    file: withBase("certificates/intro_R.pdf")
   },
   {
     title: "UNP BVC HBA Internship Certificate",
-    file: "/certificates/UNP Certificate_BVC HBA Internship 2023033101350115_legitdoc.pdf"
+    file: withBase("certificates/UNP Certificate_BVC HBA Internship 2023033101350115_legitdoc.pdf")
   }
 ];
 
